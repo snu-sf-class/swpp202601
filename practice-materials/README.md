@@ -13,3 +13,5 @@ Note: More materials will be added as the semester goes on!
 * 2026/03/12: Uploaded practice session slides 02
 * 2026/03/19: Uploaded practice session slides 03~05
 * 2026/03/26: Uploaded practice session slides 06~10
+* 2026/03/29: Uploaded supplementary LLVM materials
+* 2026/03/30: Uploaded Alive2 installation script
