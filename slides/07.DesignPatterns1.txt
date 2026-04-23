@@ -1,0 +1,59 @@
+
+class Passenger {
+  FullName name;
+  Address address;
+  PhoneNumber number;
+
+  f() { ... }
+}
+
+class VIP extends Passenger {
+  FFN account;
+}
+
+
+
+
+
+Class A {
+  public static int a;
+}
+
+A.a
+
+
+
+큰 원칙:
+한 클래스의 member 변수들을 접근하는 코드는 한 곳(그 클래스를 정의하는 부분)에 모여 있어야 한다.
+
+- Class A 가 Class B 를 직접 access -> 대신 Interface 를 써서 사용
+- Inheritance -> 대신 Composition & Delegation
+
+
+class A {
+int x
+int y
+
+public set_x(int v) {
+  assert (v >= 10);
+  x = v
+}
+f() {
+   assert (v >= 10);
+   x = v
+}
+code accessing x and y
+
+}
+----------------------
+Import A
+class B {
+  f(A a) {
+     a.set_x(-10);
+     a.x = -10
+  }
+}
+--------------------
+class B extends A {
+   h() { x = -10 }
+}

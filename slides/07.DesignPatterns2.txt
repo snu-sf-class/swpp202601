@@ -1,0 +1,28 @@
+interface PrinterFactory {
+   Printer new_printer();
+}
+
+interface Printer {
+   print();
+   debug();
+}
+
+
+
+interface SetLikeFactory {
+  SetLike<E> new_set<E>(): 
+}
+
+interface SetLike<E> {
+   push(E x);
+   E pop();
+   free();
+}
+
+------------
+interface SetLike<E> {
+  SetLike<E> new_set();
+  push(SetLike<E> self, E x);
+  E pop(SetLike<E> self);
+  free(SetLike<E> self);
+}
